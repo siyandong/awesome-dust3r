@@ -32,6 +32,8 @@ A curated list of papers and open-source resources related to DUSt3R/MASt3R, the
 <details span>
 <summary><b>Update Log:</b></summary>
 
+**July 8, 2026**: Add PROFusion.
+<br>
 **Oct 25, 2025**: Add Human3R, Rig3R, SegMASt3R, PLANA3R, TTT3R.
 <br>
 **Sep 6, 2025**: Add SAIL-Recon, FastVGGT, HAMSt3R, Vista-SLAM.
@@ -207,6 +209,19 @@ We propose a new structure-from-motion framework to recover accurate camera pose
 
 
 ## 3D Reconstruction:
+
+
+## 2026:
+### 1. PROFusion: Robust and Accurate Dense Reconstruction via Camera Pose Regression and Optimization ![](https://img.shields.io/badge/2026-ICRA-yellow)
+**Authors**: Siyan Dong, Zijun Wang, Lulu Cai, Yi Ma, Yanchao Yang
+<details span>
+<summary><b>Abstract</b></summary>
+Real-time dense scene reconstruction during unstable camera motions is crucial for robotics, yet current RGB-D SLAM systems fail when cameras experience large viewpoint changes, fast motions, or sudden shaking. Classical optimization-based methods deliver high accuracy but fail with poor initialization during large motions, while learning-based approaches provide robustness but lack sufficient accuracy for dense reconstruction. We address this challenge through a combination of learning-based initialization with optimization-based refinement. Our method employs a camera pose regression network to predict metric-aware relative poses from consecutive RGB-D frames, which serve as reliable starting points for a randomized optimization algorithm that further aligns depth images with the scene geometry. Extensive experiments demonstrate promising results: our approach outperforms the best competitor on challenging benchmarks, while maintaining comparable accuracy on stable motion sequences. The system operates in real-time, showcasing that combining simple and principled techniques can achieve both robustness for unstable motions and accuracy for dense reconstruction. [Code](https://github.com/siyandong/PROFusion).
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2509.24236) | [💻 Code](https://github.com/siyandong/PROFusion)
+
+<br>
 
 
 ## 2025:
